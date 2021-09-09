@@ -26,6 +26,24 @@ export class CollectionsQuery extends BulkQuery {
                   }
                 }
               }
+              metafields {
+                edges {
+                  node {
+                    createdAt
+                    description
+                    id
+                    key
+                    legacyResourceId
+                    namespace
+                    ownerType
+                    updatedAt
+                    value
+                    type
+                    valueType: type
+                  }
+                }
+              }
+              description
               handle
               id
               image {
@@ -37,8 +55,10 @@ export class CollectionsQuery extends BulkQuery {
                 transformedSrc
               }
               legacyResourceId
+              sortOrder
               storefrontId
               title
+              updatedAt
             }
           }
         }

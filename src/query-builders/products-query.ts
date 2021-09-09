@@ -23,11 +23,27 @@ export class ProductsQuery extends BulkQuery {
             node {
               id
               storefrontId
-              description
+              createdAt
               handle
+              legacyResourceId
+              publishedAt
+              status
               tags
               title
+              description
+              totalInventory
+              updatedAt
               vendor
+              priceRangeV2 {
+                maxVariantPrice {
+                  amount
+                  currencyCode
+                }
+                minVariantPrice {
+                  amount
+                  currencyCode
+                }
+              }
               images(sortKey: ${ProductImageSortKey}) {
                 edges {
                   node {
@@ -50,9 +66,17 @@ export class ProductsQuery extends BulkQuery {
               metafields {
                 edges {
                   node {
+                    createdAt
+                    description
+                    id
                     key
+                    legacyResourceId
                     namespace
+                    ownerType
+                    updatedAt
                     value
+                    type
+                    valueType: type
                   }
                 }
               }
