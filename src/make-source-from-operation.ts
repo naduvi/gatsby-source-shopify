@@ -168,6 +168,7 @@ export function makeSourceFromOperation(
         })
       }
 
+      // @ts-ignore
       reporter.panic({
         id: errorCodes.unknownSourcingFailure,
         context: {

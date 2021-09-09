@@ -20,8 +20,10 @@
   "homepage": "https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-shopify#readme",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
+    "gatsby": "^3.13.0",
     "gatsby-core-utils": "^2.14.0-next.2",
     "gatsby-source-filesystem": "^3.14.0-next.2",
+    "joi": "^17.4.2",
     "node-fetch": "^2.6.1",
     "sharp": "^0.29.0",
     "shift-left": "^0.1.5"

@@ -1,6 +1,7 @@
 *.js
 *.js.map
 *.d.ts
+node_modules
 !/types/*.d.ts
 
 !jest.config.js

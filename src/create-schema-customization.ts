@@ -2,7 +2,7 @@ import {
   CreateSchemaCustomizationArgs,
   NodePluginSchema,
   GatsbyGraphQLObjectType,
-} from "../../gatsby"
+} from "gatsby"
 
 function addFields(
   def: GatsbyGraphQLObjectType,

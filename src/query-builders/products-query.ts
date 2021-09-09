@@ -23,93 +23,10 @@ export class ProductsQuery extends BulkQuery {
             node {
               id
               storefrontId
-              createdAt
               description
-              descriptionHtml
-              featuredImage {
-                id
-                altText
-                height
-                width
-                originalSrc
-                transformedSrc
-              }
-              featuredMedia {
-                alt
-                mediaContentType
-                mediaErrors {
-                  details
-                }
-                preview {
-                  image {
-                    id
-                    altText
-                    height
-                    width
-                    originalSrc
-                    transformedSrc
-                  }
-                  status
-                }
-                status
-              }
-              feedback {
-                details {
-                  app {
-                    id
-                  }
-                  link {
-                    label
-                    url
-                  }
-                  messages {
-                    field
-                    message
-                  }
-                }
-                summary
-              }
-              giftCardTemplateSuffix
               handle
-              hasOnlyDefaultVariant
-              hasOutOfStockVariants
-              isGiftCard
-              legacyResourceId
-              mediaCount
-              onlineStorePreviewUrl
-              onlineStoreUrl
-              options {
-                id
-                name
-                position
-                values
-              }
-              priceRangeV2 {
-                maxVariantPrice {
-                  amount
-                  currencyCode
-                }
-                minVariantPrice {
-                  amount
-                  currencyCode
-                }
-              }
-              productType
-              publishedAt
-              requiresSellingPlan
-              sellingPlanGroupCount
-              seo {
-                description
-                title
-              }
-              status
               tags
-              templateSuffix
               title
-              totalInventory
-              totalVariants
-              tracksInventory
-              updatedAt
               vendor
               images(sortKey: ${ProductImageSortKey}) {
                 edges {
@@ -133,17 +50,9 @@ export class ProductsQuery extends BulkQuery {
               metafields {
                 edges {
                   node {
-                    createdAt
-                    description
-                    id
                     key
-                    legacyResourceId
                     namespace
-                    ownerType
-                    updatedAt
                     value
-                    type
-                    valueType: type
                   }
                 }
               }

@@ -16,6 +16,7 @@ import { pluginErrorCodes as errorCodes } from "./errors"
 import { makeSourceFromOperation } from "./make-source-from-operation"
 export { createSchemaCustomization } from "./create-schema-customization"
 import { createNodeId } from "./node-builder"
+// @ts-ignore
 import { JoiObject } from "joi"
 
 export function pluginOptionsSchema({
